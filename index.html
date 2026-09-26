@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>Para Iris 🤍</title>
+
+  <meta
+    name="description"
+    content="Una rosa blanca hecha con cariño para Iris."
+  />
+
+  <meta name="theme-color" content="#0d0a12" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="app" id="app">
+
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">I</span>
+        <span class="brand-text">para Iris</span>
+      </div>
+
+      <button
+        class="music-control"
+        id="musicButton"
+        type="button"
+        aria-label="Reproducir nuestra canción"
+      >
+        <span class="music-icon">♫</span>
+        <span class="music-text">Nuestra canción</span>
+      </button>
+    </header>
+
+    <section class="hero" aria-labelledby="heroTitle">
+
+      <div class="copy-block">
+        <p class="eyebrow">UNA ROSA DIFERENTE</p>
+
+        <h1 id="heroTitle">
+          La del centro tenía que ser blanca.
+        </h1>
+
+        <p class="intro">
+          No por casualidad, sino porque quería que llevara algo distinto:
+          una intención, un recuerdo y una parte sincera de mí.
+        </p>
+
+        <button class="reveal-button" id="revealButton" type="button">
+          Descubrir por qué
+        </button>
+      </div>
+
+      <div class="rose-stage">
+        <div class="halo" aria-hidden="true"></div>
+
+        <button
+          class="flower"
+          id="flower"
+          type="button"
+          aria-label="Tocar la rosa blanca"
+        >
+          <span class="petal p8"></span>
+          <span class="petal p7"></span>
+          <span class="petal p6"></span>
+          <span class="petal p5"></span>
+          <span class="petal p4"></span>
+          <span class="petal p3"></span>
+          <span class="petal p2"></span>
+          <span class="petal p1"></span>
+          <span class="flower-center"></span>
+        </button>
+
+        <div class="stem" aria-hidden="true"></div>
+        <div class="leaf leaf-left" aria-hidden="true"></div>
+        <div class="leaf leaf-right" aria-hidden="true"></div>
+
+        <p class="touch-hint" id="touchHint">
+          Toca la rosa
+        </p>
+      </div>
+
+    </section>
+
+    <section
+      class="letter-panel"
+      id="letterPanel"
+      aria-hidden="true"
+    >
+      <div class="letter-overlay" id="letterOverlay"></div>
+
+      <article
+        class="letter-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="letterTitle"
+      >
+        <button
+          class="close-button"
+          id="closeLetter"
+          type="button"
+          aria-label="Cerrar carta"
+        >
+          ×
+        </button>
+
+        <div class="letter-scroll">
+          <p class="letter-kicker">
+            PARA TI
+          </p>
+
+          <h2 id="letterTitle">
+            Iris 🤍
+          </h2>
+
+          <p>
+            Si me preguntas por qué la del centro era blanca,
+            te diría que no fue por casualidad.
+            La elegí así porque quería que hubiera una flor distinta,
+            una que pudiera hablar por mí incluso cuando yo no encontrara
+            todas las palabras.
+          </p>
+
+          <p>
+            Blanca, porque hay sentimientos que se sienten puros,
+            tranquilos y sinceros. Blanca, porque me recuerda a la forma
+            tan bonita en que llegaste a mi vida: casi sin hacer ruido,
+            pero dejando algo imposible de ignorar en mi corazón.
+          </p>
+
+          <p>
+            Desde que te conocí, muchas cosas empezaron a sentirse
+            diferentes. Contigo los momentos pequeños valen más,
+            las sonrisas duran más y hasta el silencio puede sentirse
+            especial.
+          </p>
+
+          <p>
+            Por eso esa rosa tenía que ser para ti. Porque entre tantas
+            cosas bonitas, tú eres de esas personas que resaltan sin
+            necesidad de intentarlo.
+          </p>
+
+          <p class="letter-highlight">
+            Te elegiría una y mil veces, Iris.
+          </p>
+
+          <p class="signature">
+            Con todo mi cariño ✦
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <span>I · R · I · S</span>
+    </footer>
+
+    <div
+      id="youtubePlayer"
+      class="youtube-player"
+      aria-hidden="true"
+    ></div>
+
+  </main>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
